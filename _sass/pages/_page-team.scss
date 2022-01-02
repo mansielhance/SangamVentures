@@ -1,0 +1,37 @@
+.page-team {
+    .jobtitle {
+        color: $primary;
+        margin: -10px 0 10px 0; //top right bottom left;
+        text-transform: lowercase;
+        font-weight: 600;
+        font-size: 18px;
+        font-style: italic;
+    }
+    .content {
+        padding-right: 50px;
+        text-align: justify;
+    }
+
+    ul li {
+        display: inline-block;
+    }
+
+    .social-team {
+        width: 20px;
+        height: 20px;
+        &:hover {
+            cursor: pointer;
+            opacity: 80%;
+            transform: translateY(-0.8px);
+        }
+    }
+
+    .twitter {
+        margin-top: 4px;
+        margin-left: 18px;
+    }
+
+    .linkedin {
+        margin-left: 5px;
+    }
+}

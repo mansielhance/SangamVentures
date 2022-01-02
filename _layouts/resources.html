@@ -1,0 +1,43 @@
+---
+layout: default
+bodyClass: "page-resources"
+---
+
+<div class="container pt-8 pb-6">
+
+    <!-- Filters -->
+    <!-- <div class="row resource-filters">
+        <div class="button-group filter-button-group justify-content-center">
+            <a class="filter-btn btn-sm btn-primary active" data-filers="*">All</a>
+            <a class="filter-btn btn-sm btn-primary" data-filers=".about">About</a>
+            <a class="filter-btn btn-sm btn-primary" data-filers=".funding">Funding</a>
+            <a class="filter-btn btn-sm btn-primary" data-filers=".clean-tech">Clean-tech</a>
+        </div>
+    </div> -->
+
+    <div class="row">
+        {% assign promoted_resources = site.resource | where: "promoted", true | sort: "weight" %}
+        {% for resource in promoted_resources %}
+        <div class="col-lg-4 mb-4">
+            <div class="resource resource-summary resource-summary-large">
+                <div class="row">
+                    {% if resource.image %}
+                    <div class="resource-image">
+                        <img width="90" height="90" alt="{{ resource.title }}" class="img-fluid"
+                            src="{{ resource.image | relative_url }}" />
+                    </div>
+                    {% endif %}
+                </div>
+                <div class="resource-meta">
+                    <p class="resource-description">{{ resource.headline }}</p>
+                    <h2 class="resource-name"><a href="{{ resource.url | relative_url }}">{{ resource.title }}</a></h2>
+                    {% if resource.external-article-url %}
+                    <a target="_blank" href="{{ resource.external-article-url }}" rel="noreferrer">{{
+                        resource.external-article-name }}</a>
+                    {% endif %}
+                </div>
+                <!-- <div class="resource-content">{{ resource.content | truncate: 60 }}</div> -->
+            </div>
+        </div>
+        {% endfor %}
+    </div>

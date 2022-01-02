@@ -1,0 +1,387 @@
+.page-home {
+    .intro-image {
+        bottom: -140px;
+        left: -130px;
+        width: 130%;
+    }
+
+    h1 {
+        background: -webkit-linear-gradient(94deg, rgba(0, 73, 112, 1) 40%, rgba(0, 73, 112, 1) 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-size: 45px !important;
+    }
+
+    .button1 {
+        padding: 10px 35px 10px 35px; //top right bottom left
+        background-color: #004970;
+        color: #ffffff;
+        border-radius: 6px;
+        border: none;
+        transition: all 0.15s ease;
+    }
+
+    .button2 {
+        background: linear-gradient(84deg, rgba(0, 73, 112, 1) 0%, rgba(0, 171, 189, 1) 100%);
+        padding: 10px 35px 10px 35px; //top right bottom left
+        color: #ffffff;
+        border-radius: 6px;
+        border: none;
+    }
+
+    //section 2 - parallax on home page
+    .parallax-row {
+        min-height: 400px;
+        width: 100vw;
+        position: relative;
+        margin-left: -50vw;
+        left: 50%;
+        margin-top: -37px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.6) inset;
+        background-image: url("abstract-swirl.jpg");
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .quote {
+        text-align: center;
+        font-weight: 500;
+        font-size: 18px;
+        color: white;
+        position: absolute;
+        top: 50%;
+        left: 40%;
+        -ms-transform: translateY(-50%, -50%);
+        transform: translateY(-50%, -50%);
+        opacity: 100% !important;
+    }
+
+    //why-what-how columns on home page
+    .contentBox {
+        padding-left: 110px;
+        margin-right: -10px !important;
+        margin-top: 100px !important;
+        margin-left: -90px;
+        padding-right: 60px !important;
+    }
+
+    .topText,
+    .wwh-text-color {
+        color: #004970;
+    }
+
+    .col-sm-7 {
+        margin-left: -180px;
+        margin-right: 10px;
+        right: 0;
+        position: relative;
+    }
+
+    .col-sm-7 img {
+        margin-left: -50px;
+        margin-right: -60px !important;
+        margin-top: -80px !important;
+        height: 800px !important;
+        width: 1500px;
+    }
+
+    //Section 3 - Why
+    .why {
+        margin-top: 100px;
+        margin-bottom: 130px;
+    }
+    .why img {
+        width: 170%;
+        margin-left: -5vw;
+        margin-top: 25px;
+    }
+
+    .why h2 {
+        text-align: left !important;
+    }
+
+    //Section 4 - How
+    .how {
+        margin-top: 250px;
+        margin-bottom: 110px;
+    }
+
+    .how img {
+        width: 126%;
+        margin-top: -190px;
+        margin-left: -3vw;
+    }
+
+    .how .howContentBox {
+        margin-top: 30px !important;
+    }
+
+    .how p,
+    h2 {
+        text-align: right;
+    }
+
+    .how button {
+        float: right;
+    }
+
+    .how .button1 {
+        margin-right: 5px;
+    }
+
+    //Section 5 and 6- What
+    .what {
+        margin-bottom: 80px;
+    }
+
+    .whatImg img {
+        margin-left: -16vw;
+        width: 100vw;
+        position: relative;
+        margin-left: -50vw;
+        left: 50%;
+        margin-top: 50px;
+    }
+
+    .whatH2 {
+        text-align: left !important;
+    }
+
+    // .modal-open      - body class for killing the scroll
+    // .modal           - container to scroll within
+    // .modal-dialog    - positioning shell for the actual modal
+    // .modal-content   - actual modal w/ bg and corners and stuff
+
+    .modal-open {
+        // Kill the scroll on the body
+        overflow: hidden;
+
+        .modal {
+            overflow-x: hidden;
+            overflow-y: auto;
+        }
+    }
+
+    // Container that the modal scrolls within
+    .modal {
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: $zindex-modal;
+        display: none;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        // Prevent Chrome on Windows from adding a focus outline. For details, see
+        // https://github.com/twbs/bootstrap/pull/10951.
+        outline: 0;
+        // We deliberately don't use `-webkit-overflow-scrolling: touch;` due to a
+        // gnarly iOS Safari bug: https://bugs.webkit.org/show_bug.cgi?id=158342
+        // See also https://github.com/twbs/bootstrap/issues/17695
+    }
+
+    // Shell div to position the modal with bottom padding
+    .modal-dialog {
+        position: relative;
+        width: auto;
+        margin: $modal-dialog-margin;
+        // allow clicks to pass through for custom click handling to close modal
+        pointer-events: none;
+
+        // When fading in the modal, animate it to slide down
+        .modal.fade & {
+            @include transition($modal-transition);
+            transform: $modal-fade-transform;
+        }
+        .modal.show & {
+            transform: $modal-show-transform;
+        }
+
+        // When trying to close, animate focus to scale
+        .modal.modal-static & {
+            transform: $modal-scale-transform;
+        }
+    }
+
+    .modal-dialog-scrollable {
+        display: flex; // IE10/11
+        max-height: subtract(100%, $modal-dialog-margin * 2);
+
+        .modal-content {
+            max-height: subtract(100vh, $modal-dialog-margin * 2); // IE10/11
+            overflow: hidden;
+        }
+
+        .modal-header,
+        .modal-footer {
+            flex-shrink: 0;
+        }
+
+        .modal-body {
+            overflow-y: auto;
+        }
+    }
+
+    .modal-dialog-centered {
+        display: flex;
+        align-items: center;
+        min-height: subtract(100%, $modal-dialog-margin * 2);
+
+        // Ensure `modal-dialog-centered` extends the full height of the view (IE10/11)
+        &::before {
+            display: block; // IE10
+            height: subtract(100vh, $modal-dialog-margin * 2);
+            height: min-content; // Reset height to 0 except on IE
+            content: "";
+        }
+
+        // Ensure `.modal-body` shows scrollbar (IE10/11)
+        &.modal-dialog-scrollable {
+            flex-direction: column;
+            justify-content: center;
+            height: 100%;
+
+            .modal-content {
+                max-height: none;
+            }
+
+            &::before {
+                content: none;
+            }
+        }
+    }
+
+    // Actual modal
+    .modal-content {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        width: 100%; // Ensure `.modal-content` extends the full width of the parent `.modal-dialog`
+        // counteract the pointer-events: none; in the .modal-dialog
+        color: $modal-content-color;
+        pointer-events: auto;
+        background-color: $modal-content-bg;
+        background-clip: padding-box;
+        border: $modal-content-border-width solid $modal-content-border-color;
+        @include border-radius($modal-content-border-radius);
+        @include box-shadow($modal-content-box-shadow-xs);
+        // Remove focus outline from opened modal
+        outline: 0;
+    }
+
+    // Modal background
+    .modal-backdrop {
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: $zindex-modal-backdrop;
+        width: 100vw;
+        height: 100vh;
+        background-color: $modal-backdrop-bg;
+
+        // Fade for backdrop
+        &.fade {
+            opacity: 0;
+        }
+        &.show {
+            opacity: $modal-backdrop-opacity;
+        }
+    }
+
+    // Modal header
+    // Top section of the modal w/ title and dismiss
+    .modal-header {
+        display: flex;
+        align-items: flex-start; // so the close btn always stays on the upper right corner
+        justify-content: space-between; // Put modal header elements (title and dismiss) on opposite ends
+        padding: $modal-header-padding;
+        border-bottom: $modal-header-border-width solid $modal-header-border-color;
+        @include border-top-radius($modal-content-inner-border-radius);
+
+        .close {
+            padding: $modal-header-padding;
+            // auto on the left force icon to the right even when there is no .modal-title
+            margin: (-$modal-header-padding-y) (-$modal-header-padding-x) (-$modal-header-padding-y) auto;
+            background-color: $white;
+        }
+
+        .x{
+            color: $primary;
+        }
+    }
+
+    // Title text within header
+    .modal-title {
+        margin-bottom: 0;
+        line-height: $modal-title-line-height;
+    }
+
+    // Modal body
+    // Where all modal content resides (sibling of .modal-header and .modal-footer)
+    .modal-body {
+        position: relative;
+        text-align: center !important;
+        // Enable `flex-grow: 1` so that the body take up as much space as possible
+        // when there should be a fixed height on `.modal-dialog`.
+        flex: 1 1 auto;
+        padding: $modal-inner-padding;
+    }
+
+    // Measure scrollbar width for padding body during modal show/hide
+    .modal-scrollbar-measure {
+        position: absolute;
+        top: -9999px;
+        width: 50px;
+        height: 50px;
+        overflow: scroll;
+    }
+
+    // Scale up the modal
+    @include media-breakpoint-up(sm) {
+        // Automatically set modal's width for larger viewports
+        .modal-dialog {
+            max-width: $modal-md;
+            margin: $modal-dialog-margin-y-sm-up auto;
+        }
+
+        .modal-dialog-scrollable {
+            max-height: subtract(100%, $modal-dialog-margin-y-sm-up * 2);
+
+            .modal-content {
+                max-height: subtract(100vh, $modal-dialog-margin-y-sm-up * 2);
+            }
+        }
+
+        .modal-dialog-centered {
+            min-height: subtract(100%, $modal-dialog-margin-y-sm-up * 2);
+
+            &::before {
+                height: subtract(100vh, $modal-dialog-margin-y-sm-up * 2);
+                height: min-content;
+            }
+        }
+
+        .modal-content {
+            @include box-shadow($modal-content-box-shadow-sm-up);
+        }
+
+        .modal-sm {
+            max-width: $modal-sm;
+        }
+    }
+
+    @include media-breakpoint-up(lg) {
+        .modal-lg,
+        .modal-xl {
+            max-width: $modal-lg;
+        }
+    }
+
+    @include media-breakpoint-up(xl) {
+        .modal-xl {
+            max-width: $modal-xl;
+        }
+    }
+}

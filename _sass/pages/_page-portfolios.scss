@@ -1,0 +1,54 @@
+.page-portfolios {
+  .portfolio-summary {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-top: 10px;
+    .portfolio-image {
+      height: 60px;
+      width: 60px;
+      margin-right: 10px;
+      border-radius: 50%;
+      overflow: hidden;
+      img {
+        width: 60px;
+      }
+    }
+    .portfolio-meta {
+      flex: 1;
+      margin-left: 9px;
+      h2 {
+        margin: 0;
+        font-size: 22px;
+        font-weight: normal;
+      }
+      p {
+        color: $black;
+        text-transform: lowercase;
+        margin: 0;
+        font-size: 12px;
+        font-weight: 500;
+      }
+    }
+    .portfolio-content {
+      margin-top: 20px;
+      flex: 1 0 100%;
+    }
+  }
+
+  .portfolio-summary-large {
+    background-color: $white-offset;
+    padding: 30px;
+    border-radius: 3px;
+    .portfolio-image {
+      height: 90px;
+      width: 90px;
+      margin-right: 20px;
+      border-radius: 50%;
+      overflow: hidden;
+      img {
+        width: 90px;
+      }
+    }
+  }
+}

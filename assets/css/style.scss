@@ -1,0 +1,182 @@
+---
+---
+
+// Colors
+$primary: #004970;
+$primary-dark: #00abbd;
+$secondary: #8ed8f8;
+$black: #2f2f41;
+$white: #ffffff;
+$white-offset: #f1f1f173;
+$steel: #5c5a5a;
+
+// Links
+$link-color: $primary;
+$link-decoration: none;
+$link-hover-color: lighten($primary, 10%);
+$link-hover-decoration: underline;
+
+//Buttons
+button:hover{
+  cursor: pointer;
+  opacity: 90%;
+  transform: translateY(-1px);
+}
+
+// Fonts
+$font-family-base: "Avenir", sans-serif, -apple-system;
+$font-family-heading: "Lato", sans-serif, -apple-system;
+
+// Footer
+$footer-background-color: $primary;
+$footer-text-color: $white;
+$sub-footer-background-color: darken($primary, 10%);
+$sub-footer-text-color: $white;
+
+// Bootstrap
+@import "bootstrap-variables";
+@import "bootstrap/bootstrap-reboot";
+@import "bootstrap/bootstrap-grid";
+// @import 'bootstrap/bootstrap'; // Uncomment this line to import the entire Bootstrap library
+
+// Libraries
+@import "libraries/hamburgers/hamburgers";
+
+// Components
+@import "components/type";
+@import "components/page";
+@import "components/header";
+@import "components/footer";
+@import "components/sub-footer";
+@import "components/logo";
+@import "components/main-menu";
+@import "components/main-menu-mobile";
+@import "components/hamburger";
+@import "components/buttons";
+@import "components/call";
+@import "components/title";
+@import "components/content";
+@import "components/intro";
+@import "components/intro-image";
+@import "components/strip";
+@import "components/feature";
+@import "components/social";
+// @import "components/fonts"; // Uncomment this line to self host font
+
+// Pages
+@import "pages/page-home";
+@import "pages/page-team";
+@import "pages/page-teams";
+@import "pages/page-portfolios";
+@import "pages/page-resources";
+
+//Header
+.header {
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.05);
+}
+
+//Menu
+#main-menu {
+  font-family: "Avenir";
+}
+
+#main-menu li:active {
+  color: #004970;
+  font-weight: 500;
+}
+
+//Footer
+.footer {
+  padding-top: 60px;
+  margin-top: -20px;
+  padding-bottom: 20px;
+}
+
+.footerRow{
+  margin-left: -70px;
+  margin-right: 0;
+}
+
+.nav-item{
+  margin-bottom: 10px !important;
+}
+
+.footer-links {
+  margin-top: -20px !important;
+  margin-bottom: -10px;
+  margin-left: -10px;
+}
+
+//Sub Footer
+.copyright {
+  font-family: "avenir";
+  font-weight: 500;
+  padding-left: 20px !important;
+}
+
+//body
+body {
+  font-size: 16px;
+  line-height: 1.2;
+  font-family: $font-family-base;
+  @include media-breakpoint-up(md) {
+    font-size: 16px;
+    line-height: 1.3;
+  }
+}
+
+//for all H1 headings except home page
+h1{
+  background: -webkit-linear-gradient(94deg, rgba(0, 73, 112, 1) 0%, rgba(0, 171, 189, 1) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 45px !important;
+ }
+
+.intro p{
+  font-size: 1rem;
+}
+
+/*---Team and Portfolio Page-----*/
+
+.inner-heading-intro{
+  padding-left: 25px;
+}
+
+.profiles-row{
+  margin-top: -80px;
+  margin-bottom: 80px;
+}
+
+.main-container{
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-top: -80px;
+}
+
+.the-name{
+  text-align: left;
+  font-weight: 700 !important;
+  font-size: 20px !important;
+}
+
+.portfolio-gallery{
+  margin-left: -30px;
+}
+
+.portfolio-image:hover{
+  transform: translateY(-5px);
+}
+
+.portfolio-filters{
+  margin-top: -100px;
+  margin-bottom: 110px;
+  margin-left: 20px;
+}
+
+.filter-btn{
+  padding-right: 20px;
+  &:hover{
+    cursor: pointer;
+  }
+}

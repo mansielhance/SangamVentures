@@ -1,0 +1,156 @@
+---
+layout: default
+bodyClass: "page-home"
+---
+
+<!--Section 1 -->
+<div class="intro">
+  <div class="container">
+    <div class="row justify-content-start">
+      <div class="col-12 col-md-7 col-lg-6 order-2 order-md-1">
+        {{ content }}
+        <a href="#why">
+          <button type="button" class="btn btn-primary btn-lg button1">Why?</button>
+        </a>
+        <span><button type="button" class="btn btn-primary btn-lg button2" data-toggle="modal"
+            data-target="#joinUsModal">Join Us</button>
+        </span>
+      </div>
+      {% if page.intro_image %}
+      <div class="col-12 col-md-5 col-lg-6 order-1 order-md-2 position-relative">
+        <img alt="{{ page.title }}"
+          class="intro-image{% if page.intro_image_absolute %} intro-image-absolute{% endif %}{% if page.intro_image_hide_on_mobile %} intro-image-hide-mobile{% endif %}"
+          src="{{ page.intro_image | relURL }}" />
+      </div>
+      {% endif %}
+    </div>
+  </div>
+</div>
+
+<!--Section 2 - Quote -->
+<div class="container ">
+  <div class="row parallax-row">
+    <p class="quote"><i>“Climate change is real. It is happening right now"</i></p>
+  </div>
+</div>
+
+<!--Section 3 - Why -->
+
+<a id="why"></a>
+<!--anchor -->
+
+<div class="why">
+  <div class="container">
+    <div class="row justify-content-start">
+      <div class="col-12 col-md-7 col-lg-7 order-1 order-md-1 contentBox">
+        <p class="topText">~ Why are we working?</p>
+        <h2 class="wwh-text-color"> To Create Inclusive and Climate Resilient Communities</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
+          molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum
+          numquam blanditiis!</p>
+        <a href="#how">
+          <button type="button" class="btn btn-primary btn-lg button1">how?</button> </a>
+        <a href="/resource/why">
+          <span><button type="button" class="btn btn-primary btn-lg button2">learn more</button></span></a>
+      </div>
+      {% if page.why_image %}
+      <div class="col-12 col-md-5 col-lg-5 order-2 order-md-2 position-relative">
+        <img alt="{{ page.title }}"
+          class="why-image{% if page.why_image_absolute %} why-image-absolute{% endif %}{% if page.why_image_hide_on_mobile %} why-image-hide-mobile{% endif %}"
+          src="{{ page.why_image | relURL }}" />
+      </div>
+      {% endif %}
+    </div>
+  </div>
+</div>
+
+<!-- Section 4 - How -->
+
+<a id="how"></a>
+<!--anchor -->
+
+<div class="how">
+  <div class="container">
+    <div class="row justify-content-start">
+      <div class="col-12 col-md-7 col-lg-6 order-1 order-md-2 howContentBox">
+        <p class="topText">~ We are doing it to by</p>
+        <h2 class="wwh-text-color"> Driving Innovation and Diversity in the Green Economy</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
+          molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum
+          numquam blanditiis!</p>
+        <a href="/resource/what">
+          <span><button type="button" class="btn btn-primary btn-lg button2">learn more</button></span></a>
+        <a href="#what">
+          <button type="button" class="btn btn-primary btn-lg button1">what?</button> </a>
+      </div>
+      {% if page.how_image %}
+      <div class="col-12 col-md-5 col-lg-6 order-2 order-md-1 position-relative">
+        <img alt="{{ page.title }}"
+          class="how-image{% if page.how_image_absolute %} how-image-absolute{% endif %}{% if page.how_image_hide_on_mobile %} how-image-hide-mobile{% endif %}"
+          src="{{ page.how_image | relURL }}" />
+      </div>
+      {% endif %}
+    </div>
+  </div>
+</div>
+
+<!--Section 5 - What Content -->
+
+<a id="what"></a>
+<!--anchor -->
+
+<div class="what">
+  <div class="container">
+    <div class="row justify-content-start">
+      <div class="whatContentBox">
+        <p class="topText">~ What are we doing?</p>
+        <h2 class="whatH2 wwh-text-color"> Climate mitigation and adaptation</h2>
+        <p class="mobilePWhat">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
+          molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum
+          numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium
+          optio, eaque rerum!</p>
+        <button type="button" class="btn btn-primary btn-lg button2" data-toggle="modal"
+        data-target="#joinUsModal">Join Us</button>
+        <a href="/resource/what">
+          <span><button type="button" class="btn btn-primary btn-lg button1">learn more</button></span></a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--Section 6 - What Image -->
+<div class="container ">
+  <div class="row whatImg mobileImg">
+    {% if page.what_image %}
+    <div class="col-12 position-relative">
+      <img alt="{{ page.title }}"
+        class="what-image{% if page.what_image_absolute %} what-image-absolute{% endif %}{% if page.what_image_hide_on_mobile %} what-image-hide-mobile{% endif %}"
+        src="{{ page.what_image | relURL }}" />
+    </div>
+    {% endif %}
+  </div>
+</div>
+
+
+<!-- Pop-Up Modal for Join Us Button -->
+<div class="modal fade" id="joinUsModal" tabindex="-1" role="dialog" aria-labelledby="joinUsModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="joinUsModalLabel">Hello There!</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true" class="x">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <a href="/resource/startups">
+          <button type="button" class="btn btn-secondary button1">Are you a Startup?</button>
+        </a>
+        <a href="/resource/investors">
+          <button type="button" class="btn btn-primary button2">Are you an Investor?</button>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>

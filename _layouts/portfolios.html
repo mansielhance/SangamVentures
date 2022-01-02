@@ -1,0 +1,54 @@
+---
+layout: default
+bodyClass: "page-portfolios"
+---
+<div class="container main-container">
+    <div class="intro">
+        <div class="container inner-heading-intro">
+            <div class="row justify-content-start">
+                {{ content }}
+            </div>
+        </div>
+    </div>
+
+    <!-- Filters -->
+    <!-- <div class="row portfolio-filters">
+        <div class="button-group filter-button-group justify-content-center">
+            <a class="filter-btn btn-sm btn-primary active" data-filers="*">All</a>
+            <a class="filter-btn btn-sm btn-primary" data-filers=".energy">Energy</a>
+            <a class="filter-btn btn-sm btn-primary" data-filers=".agriculture">Agriculture</a>
+            <a class="filter-btn btn-sm btn-primary" data-filers=".waste-management">Waste Management</a>
+        </div>
+    </div> -->
+
+
+    <div class="container profiles-row portfolio-gallery">
+        <div class="row grid">
+            {% assign portfolios = site.portfolio | where: "promoted", empty | sort: "weight" %}
+            {% for portfolio in portfolios %}
+            <div class="col-lg-4 mb-4 {{ portfolio.category }}">
+                {% if portfolio.image %}
+                <div class="portfolio-image ">
+                    <a href="{{ portfolio.url | relative_url }}" class="portfolio-link">
+                        <img width="400" height="200" alt="{{ portfolio.title }}" class="img-fluid"
+                            src="{{ portfolio.image | relative_url }}" /></a>
+                </div>
+                {% endif %}
+
+                <!-- uncomment the code below to show the website url beneath the images -->
+                <!-- <div class="portfolio portfolio-summary">
+                    <div class="portfolio-meta">
+                        <a target="_blank" href="{{ portfolio.websiteurl | relative_url }}">
+                        <p class="">{{ portfolio.websitedomain }}</p>
+                        </a>
+                    </div>
+                </div> -->
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+
+</div>
+
+
+

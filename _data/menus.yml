@@ -1,0 +1,28 @@
+main:
+  - name: "Home"
+    url: "/"
+    weight: 1
+  - name: "Team"
+    url: "/team/"
+    weight: 2
+  - name: "Portfolio"
+    url: "/portfolio/"
+    weight: 3
+  - name: "Resources"
+    url: "/resources/"
+    weight: 4
+
+footer:
+  - name: "Portfolio"
+    url: "/portfolio/"
+    weight: 1
+  - name: "Resources"
+    url: "/resources/"
+    weight: 2
+  - name: "Startups"
+    url: "/resource/startups"
+    weight: 3
+  - name: "Investors"
+    url: "/resource/investors"
+    weight: 4
+

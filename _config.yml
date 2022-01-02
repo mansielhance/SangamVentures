@@ -1,0 +1,63 @@
+baseurl: '/'
+permalink: pretty
+title: 'Sangam Ventures'
+
+logo:
+  mobile: "images/logo/logo-mobile.svg"
+  mobile_height: "32px"
+  mobile_width: "32px"
+  desktop: "images/logo/logo.svg"
+  desktop_height: "45px"
+  desktop_width: "135px"
+
+collections:
+  services:
+    output: true
+  team:
+    output: true
+  portfolio:
+    output: true
+  resource:
+    output: true
+
+defaults:
+  - scope:
+      path: ""
+      type: "services"
+    values:
+      layout: "service"
+  - scope:
+      path: ""
+      type: "team"
+    values:
+      layout: "team"
+  - scope:
+      path: ""
+      type: "portfolio"
+    values:
+      layout: "portfolio"
+  - scope:
+      path: ""
+      type: "resource"
+    values:
+      layout: "resource"
+
+sass:
+  indentWidth: 4
+  style: compressed # possible values: nested expanded compact compressed
+  precision: 10
+
+plugins:
+  - jekyll-environment-variables
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - LICENSE.md
+  - LICENSE
+  - README.md
