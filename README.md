@@ -1,96 +1,60 @@
-# Jekyll Serif Theme
+# Sangam Ventures' Website Documentation
 
-Serif is a modern business theme for Jekyll. It contains multiple content types for a typical business website. The theme is fully responsive, blazing fast and artfully illustrated.
+## Base Details
 
-[Live Demo](https://jekyll-serif.netlify.app/) | 
-[Zerostatic Themes](https://www.zerostatic.io)
+### Fonts
+Lato for Headings
+Avenir for Body Text
 
-![Jekyll Serif Theme screenshot](https://www.zerostatic.io/theme/jekyll-serif/jekyll-serif-screenshot.png)
+### Colors
+primary: #004970
+primary-dark: #00abbd
+secondary: #8ed8f8
 
-### Theme features
+### Image Sizes 
+All images/icons used are in `.svg` format
 
-- Jekyll 4.2
-- Netlify & Github Pages ready
-- Services (Collection)
-- Team (Collection)
-- Features (Data)
-- SCSS
-- Responsive design
-- Responsive hamburger and slide in menu
-- Bootstrap 4.6
-- Only the bootstrap grid and utilites are imported by default. If you want to use more of the Boostrap library you can uncomment the `@import` in `style.scss`
-- 100/100 Google Lighthouse speed score
-- 100/100 Google Lighthouse seo score
-- 100/100 Google Lighthouse accessibility score
-- 100/100 Google Lighthouse best practices score
-- Under 50KB without images or 80KB with images and illustrations ⚡
-- Under 20KB without Google fonts ⚡⚡⚡
-- Robust example content included
-- Royalty free illustrations included
+`wxh`
 
+- Team Page
+    minimum image size 400x400px
 
-## Installation
+- Portfolio Page
+    minimum image size 700x400px
 
-### Installing Ruby & Jekyll
- 
-If this is your first time using Jekyll, please follow the [Jekyll docs](https://jekyllrb.com/docs/installation/) and make sure your local environment (including Ruby) is setup correctly.
+- Resource Page Icons
+    minimum image size 68x68px
 
-### Installing Theme
+## Additional Information
 
-Download or clone the theme.
+- To activate google analytics, update google_analytics_id in `seo.yml`
 
-To run the theme locally, navigate to the theme directory and run:
+- Additonal team members can be added in `_team`
 
-```
-bundle install
-``` 
+- Additonal company portfolio can be added in `_portfolio`
 
-To start the Jekyll local development server.
+- New articles can be added in `_resource`
+
+### Running on local server
+
+To run the website on local server, navigate to the theme directory and run:
 
 ```
 bundle exec jekyll serve
 ``` 
 
-To build the theme.
- 
+To stop the server
+
 ```
-bundle exec jekyll build
-```
+ctrl+c
+``` 
 
-## Deployment
+### To publish
 
-### Stackbit
+Update `baseurl` and `permalink` in `_config.yml` 
 
-Use Stackbit to deploy this theme. This theme contains a valid and tested `stackbit.yaml`
 
-[![Create with Stackbit](https://assets.stackbit.com/badge/create-with-stackbit.svg)](https://app.stackbit.com/create?theme=https://github.com/zerostaticthemes/jekyll-serif-theme)
+### Jekyll's official documentation
 
-### Netlify
-
-Use Netlify to deploy this theme. This theme contains a valid and tested `netlify.toml` - Feel free to use the 1-click deploy below.
-
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/zerostaticthemes/jekyll-serif-theme)
-
-### Github Pages
-This theme has been tested to work with Github Pages (and Github Project Pages). When using Github Pages you will need to update the `baseurl` in the `_config.yml` otherwise all the css, images and paths will be broken.
-
-For example the site https://zerostaticthemes.github.io/jekyll-serif-theme would have `baseurl: "/jekyll-serif-theme/"`
-
-## License & Credits
-
-### Credits
-
-- Beautiful royalty free Illustrations by Icons8 - https://icons8.com/illustrations/style--pixeltrue
-- Stock images by Unsplash - https://unsplash.com/
-- Feature icons by Noun Project - https://thenounproject.com/
-
-### License
-
-This theme is open source under the MIT license. Please be respectful 🙏🏽 Leave me as an original author in the LICENSE file if you fork or copy this theme. 
-
-> Do not create ports of this theme. Do You can't re-distribute or re-sell this theme as a theme, stock, in a tool or as a template.
-
-### Other Versions
-
-- [Hugo Serif Theme](https://github.com/zerostaticthemes/hugo-serif-theme) (official)
-- [Gatsby Serif Theme](https://github.com/zerostaticthemes/gatsby-serif-theme) (official)
+- [Jekyll](https://jekyllrb.com/) (official)
+- Jekyll theme used - [Serif](https://www.zerostatic.io/theme/hugo-serif/)
