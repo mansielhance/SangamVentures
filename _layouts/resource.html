@@ -3,13 +3,48 @@ layout: default
 bodyClass: "page-resource"
 ---
 
+<!-- Cover image with the quote -->
+<div class="container">
+  <div class="row coverImage ">
+    {% if page.cover-image %}
+    <img src="{{ page.cover-image | relative_url }}" alt="{{ page.title }}" />
+    <div class="quote">
+      {% if page.cover-quote %}
+      <p class="main-quote"><i>"{{ page.cover-quote }}"</i></p>
+      {% endif %}
+      {% if page.quote-author %}
+      {% if page.author-linkedinurl %}
+      <a target="_blank" href="{{ page.author-linkedinurl }}" rel="noreferrer">
+        {% endif %}
+        <p class="author">-{{ page.quote-author}}</p>
+      </a>
+      {% endif %}
+      {% if page.quote-author-designation %}
+      <p class="designation">{{ page.quote-author-designation}}</p>
+      {% endif %}
+      {% if page.quote-author-image %}
+      <img src="{{ page.quote-author-image | relative_url }}" alt="{{ page.quote-author }}" />
+      {% endif %}
+    </div>
+    {% endif %}
+  </div>
+</div>
+
+<!-- Content -->
 <div class="container pb-6 pt-6 pt-md-10 pb-md-10">
   <div class="row justify-content-start">
-    <div class="col-12 col-md-8">
+    <div class="col-12">
       <div class="resource resource-single">
         <h1 class="title">{{page.title}}</h1>
         <div class="content">{{content}}</div>
       </div>
     </div>
+  </div>
+</div>
+
+<!-- Call to Action Section -->
+<div class="container  ">
+  <div class="row cta-box">
+
   </div>
 </div>
