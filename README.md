@@ -97,7 +97,7 @@ Update `baseurl` and `permalink` in `_config.yml`
 ### Portfolio Page
 
 - [x] Tile view for the companies
-- [ ] Filters
+- [x] Filters
 
 ### Internal Portfolio Pages
 
@@ -107,7 +107,7 @@ Update `baseurl` and `permalink` in `_config.yml`
 ### Resources Page
 
 - [x] Tile view for articles 
-- [ ] Filters
+- [x] Filters
 
 ### Internal Article Pages for Resources
 

@@ -12,21 +12,21 @@ bodyClass: "page-portfolios"
     </div>
 
     <!-- Filters -->
-    <!-- <div class="row portfolio-filters">
-        <div class="button-group filter-button-group justify-content-center">
-            <a class="filter-btn btn-sm btn-primary active" data-filers="*">All</a>
-            <a class="filter-btn btn-sm btn-primary" data-filers=".energy">Energy</a>
-            <a class="filter-btn btn-sm btn-primary" data-filers=".agriculture">Agriculture</a>
-            <a class="filter-btn btn-sm btn-primary" data-filers=".waste-management">Waste Management</a>
+    <div class="row portfolio-filters" >
+        <div class="button-group filter-button-group justify-content-center" id="filter-btns">
+            <a class="filter-btn btn-sm btn-primary active" data-target="all">All</a>
+            <a class="filter-btn btn-sm btn-primary" data-target="energy">Energy</a>
+            <a class="filter-btn btn-sm btn-primary" data-target="agriculture">Agriculture</a>
+            <a class="filter-btn btn-sm btn-primary" data-target="waste-management">Waste Management</a>
         </div>
-    </div> -->
+    </div>
 
 
-    <div class="container profiles-row portfolio-gallery">
-        <div class="row grid">
+    <div class="container profiles-row ">
+        <div class="row filter-gallery">
             {% assign portfolios = site.portfolio | where: "promoted", empty | sort: "weight" %}
             {% for portfolio in portfolios %}
-            <div class="col-lg-4 mb-4 {{ portfolio.category }}">
+            <div class="col-lg-4 mb-4 filter-column" data-id="{{ portfolio.category }}">
                 {% if portfolio.image %}
                 <div class="portfolio-image ">
                     <a href="{{ portfolio.url | relative_url }}" class="portfolio-link">
@@ -49,6 +49,4 @@ bodyClass: "page-portfolios"
     </div>
 
 </div>
-
-
 

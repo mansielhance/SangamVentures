@@ -6,19 +6,19 @@ bodyClass: "page-resources"
 <div class="container pt-8 pb-6">
 
     <!-- Filters -->
-    <!-- <div class="row resource-filters">
-        <div class="button-group filter-button-group justify-content-center">
-            <a class="filter-btn btn-sm btn-primary active" data-filers="*">All</a>
-            <a class="filter-btn btn-sm btn-primary" data-filers=".about">About</a>
-            <a class="filter-btn btn-sm btn-primary" data-filers=".funding">Funding</a>
-            <a class="filter-btn btn-sm btn-primary" data-filers=".clean-tech">Clean-tech</a>
+    <div class="row resource-filters" >
+        <div class="button-group filter-button-group justify-content-center" id="filter-btns">
+            <a class="filter-btn btn-sm btn-primary active" data-target="all">All</a>
+            <a class="filter-btn btn-sm btn-primary" data-target="about">About</a>
+            <a class="filter-btn btn-sm btn-primary" data-target="funding">Funding</a>
+            <a class="filter-btn btn-sm btn-primary" data-target="clean-tech">Clean-Tech</a>
         </div>
-    </div> -->
+    </div>
 
-    <div class="row">
+    <div class="row filter-gallery">
         {% assign promoted_resources = site.resource | where: "promoted", true | sort: "weight" %}
         {% for resource in promoted_resources %}
-        <div class="col-lg-4 mb-4">
+        <div class="col-lg-4 mb-4 filter-column" data-id="{{ resource.category }}">
             <div class="resource resource-summary resource-summary-large">
                 <div class="row">
                     {% if resource.image %}
@@ -41,3 +41,5 @@ bodyClass: "page-resources"
         </div>
         {% endfor %}
     </div>
+</div>
+
