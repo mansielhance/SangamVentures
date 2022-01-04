@@ -113,7 +113,7 @@ Update `baseurl` and `permalink` in `_config.yml`
 
 - [x] Section for quotes with the person's photo and link to their profile
 - [x] Title and Description
-- [ ] CTAs to lead to other pages
+- [x] CTAs to lead to other pages
 - [x] FAQ section
 
 
