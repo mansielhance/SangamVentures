@@ -1,4 +1,11 @@
 .page-team {
+
+    .header{
+        .main-menu{
+            padding-top: 20px !important;
+        }
+    }
+
     .jobtitle {
         color: $primary;
         margin: -10px 0 10px 0; //top right bottom left;
@@ -14,6 +21,7 @@
 
     ul li {
         display: inline-block;
+        margin-top: -20px;
     }
 
     .social-team {
@@ -24,14 +32,5 @@
             opacity: 80%;
             transform: translateY(-0.8px);
         }
-    }
-
-    .twitter {
-        margin-top: 4px;
-        margin-left: 18px;
-    }
-
-    .linkedin {
-        margin-left: 5px;
     }
 }

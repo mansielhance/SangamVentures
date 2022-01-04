@@ -2,14 +2,17 @@
 layout: default
 bodyClass: "page-portfolio"
 ---
-
-<div class="container pb-6 pt-6 pt-md-10 pb-md-10">
-  <div class="row justify-content-start">
-    <div class="col-12 col-md-8">
+<!-- individual companys' page layout -->
+<div class="container pb-2 pt-5 pt-md-8 pb-md-10">
+  <div class="row">
+    <div class="col-12">
       <div class="portfolio portfolio-single">
         <h1 class="title">{{page.title}}</h1>
+        {% if page.websiteurl %}
+        <a target="_blank" href="{{ page.websiteurl }}" alt="{{ page.title }}" rel="noreferrer" id="url">~ {{
+          page.websiteurl }}</a>
+        {% endif %}
         <div class="content">{{content}}</div>
       </div>
     </div>
   </div>
-</div>

@@ -29,6 +29,10 @@ All images/icons used are in either `.jpg` or  `.svg` format as per use case.
     - minimum image size 700x400px
     - Outside stroke #004970 Opacity 88%
 
+- Portfolio Internal Pages;
+    - images for this can be stored in `images/company` folder
+    - please ensure the images are of same size before placing them on the page
+
 - Resource Page Icons;
     - minimum size 68x68px `.svg`
     - Circular shape
@@ -102,7 +106,7 @@ Update `baseurl` and `permalink` in `_config.yml`
 ### Internal Portfolio Pages
 
 - [x] Company name, about
-- [ ] Photograph, links, works
+- [x] Photograph, links, works
 
 ### Resources Page
 

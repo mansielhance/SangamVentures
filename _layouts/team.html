@@ -10,23 +10,6 @@ bodyClass: "page-team"
         <h1 class="title">{{page.title}}</h1>
         <h4 class="jobtitle">~{{ page.jobtitle }}</h4>
         <div class="content">{{content}}</div>
-
-        <div class="row">
-          <ul>
-            <li>{% if page.twitterurl %}
-              <a target="_blank" href="{{ page.twitterurl }}" rel="noreferrer">
-                <img src="/images/social/twitter-gray.svg" alt="{{ page.title }}" class="social-team twitter" />
-              </a>
-              {% endif %}
-            </li>
-            <li>{% if page.linkedinurl %}
-              <a target="_blank" href="{{ page.linkedinurl }}" rel="noreferrer">
-                <img src="/images/social/linkedin-gray.svg" alt="{{ page.title }}" class="social-team linkedin" />
-              </a>
-              {% endif %}
-            </li>
-          </ul>
-        </div>
       </div>
     </div>
     <div class="col-md-3">
