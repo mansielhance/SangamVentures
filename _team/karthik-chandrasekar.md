@@ -16,7 +16,7 @@ quia. Quo neque error repudiandae fuga? Ipsa laudantium molestias eos sapiente o
 
 {% include team-socials.html %}
 
-<hr/><br>
+<hr/>
 ### Blogs and Links
 
 #### Some Link heading

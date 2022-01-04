@@ -17,7 +17,7 @@ Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu 
 
 {% include team-socials.html %}
 
-<hr/><br>
+<hr/>
 ### Blogs and Links
 
 #### Some Link heading

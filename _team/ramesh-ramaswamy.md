@@ -18,7 +18,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 {% include team-socials.html %}
 
-<hr/><br>
+<hr/>
 ### Blogs and Links
 
 #### Some Link heading
