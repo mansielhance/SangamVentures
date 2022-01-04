@@ -1,5 +1,4 @@
 .page-resource {
-
   .coverImage {
     min-height: 400px;
     width: 100vw;
@@ -141,4 +140,31 @@
     padding-right: 20px;
     font-size: 12px !important;
   }
+
+  //mobile responsiveness
+  @media screen and (max-width: 600px) {
+
+    .coverImage{
+
+      min-height: 300px !important;
+      img{
+        background-size: contain !important;
+        max-width: 400px;
+      }
+      .quote{
+        top: 30%;
+        left: 0;
+        right: 0;
+        padding: 10px;
+      }
+    }
+
+    .cta-box{
+      margin-bottom: 60px;
+      height: auto;
+      padding-bottom: 40px;
+    }
+
+  }
+
 }

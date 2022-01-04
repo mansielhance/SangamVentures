@@ -1,13 +1,13 @@
 .page-portfolios {
-  .profiles-row{
+  .profiles-row {
     margin-left: -30px;
   }
 
-  .portfolio-image:hover{
+  .portfolio-image:hover {
     transform: translateY(-5px);
   }
-  
-  .portfolio-filters{
+
+  .portfolio-filters {
     margin-top: -100px;
     margin-bottom: 110px;
     margin-left: 20px;
@@ -66,8 +66,38 @@
     }
   }
 
-  .filter-btn.active {
-    color: red;
-  }
+  //mobile responsiveness
+  @media screen and (max-width: 600px) {
+    .intro {
+      margin-top: 50px !important;
 
+      p {
+        padding-bottom: 0 !important;
+      }
+    }
+
+    .profiles-row{
+      margin-bottom: 0;
+    }
+
+    .portfolio-filters {
+      margin-top: 0px !important;
+      margin-left: 10px !important;
+
+      .filter-btn{
+        padding-right: 10px !important;
+      }
+    }
+
+    .filter-gallery{
+      .portfolio-image{
+        margin-right: 20px !important;
+        margin-left: 20px !important;
+      }
+      img{
+        width: 340px !important;
+        height: 200px !important;
+      }
+    }
+  }
 }

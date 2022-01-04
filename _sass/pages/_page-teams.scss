@@ -50,4 +50,20 @@
       }
     }
   }
+
+  //mobile responsiveness
+  @media screen and (max-width: 600px) {
+    .intro {
+      margin-top: 50px !important;
+
+      p {
+        padding-bottom: 0 !important;
+      }
+    }
+
+    .profiles-row {
+      margin-top: -20px !important;
+      margin-bottom: 0;
+    }
+  }
 }

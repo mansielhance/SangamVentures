@@ -37,4 +37,14 @@
             transform: translateY(-0.8px);
         }
     }
+
+    @media screen and (max-width: 600px) {
+        #main-menu-mobile{
+            ul li{
+                display: block;
+                position: relative;
+                padding-bottom: 20px  !important;
+            }
+        }
+    }
 }

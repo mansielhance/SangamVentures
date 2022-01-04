@@ -384,4 +384,49 @@
             max-width: $modal-xl;
         }
     }
+
+    //mobile responsiveness 
+    @media screen and (max-width: 600px) {
+        .contentBox{
+            padding: 0 20px 0 15px !important; //trbl
+            margin: -20px 0px 0 0px !important; //trbl
+        }
+
+        .quote{
+            left: 0 !important;
+            padding: 0 20px 0 20px !important; //trbl
+        }
+
+        .how{
+            flex-direction: column-reverse;
+            margin: -90px 0 0 0 !important;
+            p, h2{
+                text-align: left !important;
+                float: left !important;
+              }
+
+              button {
+                float: left !important;
+              }
+
+              .button2{
+                margin-right: 5px;
+              }
+
+              .howContentBox{
+                padding: 0 20px 0 15px !important;
+              }
+          }
+
+        .what{
+            margin: 60px 0 0 0 !important;
+            .whatContentBox{
+                padding: 0 20px 0 15px !important;
+              }
+        }
+
+        .intro-image, .why-image, .how-image{
+            display: none;
+          }
+    }
 }

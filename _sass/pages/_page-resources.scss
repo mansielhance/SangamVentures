@@ -62,7 +62,14 @@
     }
   }
 
-  .filter-btn.active {
-    color: red;
-  }
+    //mobile responsiveness
+    @media screen and (max-width: 600px) {
+
+      .filter-column{
+        margin-bottom: 15px !important;
+      }
+      row.filter-gallery{
+        margin-bottom: 0;
+      }
+    }
 }

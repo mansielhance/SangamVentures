@@ -99,6 +99,10 @@ $sub-footer-text-color: $white;
   margin-right: 0;
 }
 
+.logo-mobile{
+  width: 40%;
+}
+
 .nav-item{
   margin-bottom: 10px !important;
 }
@@ -169,5 +173,33 @@ h1{
   &:hover{
     cursor: pointer;
   }
+}
 
+.filter-btn.active {
+  font-weight: 600;
+}
+
+
+//Responsive (Mobile Viewport)
+@media screen and (max-width: 600px){
+  .footer{
+    margin-top: 0px;
+    padding-left: 8vh;
+  }
+
+  .footer-links{
+    padding-left: 2vh!important;
+  }
+
+  .call-email{
+    padding-top: 10px !important;
+
+    a{
+      padding: 5px 14px 12px 0 !important;
+    }
+  }
+
+  .main-menu-mobile.open{
+    opacity: 1;
+  }
 }

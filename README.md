@@ -81,7 +81,7 @@ Update `baseurl` and `permalink` in `_config.yml`
 
 ## Checklist
 
-- [ ] Responsiveness
+- [x] Responsiveness
 
 ### Home Page
 
