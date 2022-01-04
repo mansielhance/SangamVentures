@@ -14,9 +14,23 @@ cta-url: "/team/"
 category: "about"
 external-article-url: ""
 external-article-name: ""
-show-faq: false
+show-faq: true
+show-cta: true
 promoted: true
 weight: 3
+cta-heading: "Are you a startup?"
+cta-description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Bibendum arcu vitae elementum curabitur vitae nunc sed. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna."
+cta-button-text: "Join Us Today"
+cta-button-url: "/resource/startup"
+cta-image: "images/cta/cta-how.jpg"
+questions:
+    - "Imagine"
+    - "Vienna"
+    - "Smoke on the water"
+answers:
+    - "Imagine there's no countries <br> It isn't hard to do <br> Nothing to kill or die for and no religion, too <br> Imagine all the people <br> Livin' life in peace! <br> -John Lennon"
+    - "Where's the fire, what's the hurry about? <br> You better cool it off before you burn it out <br> You got so much to do and only <br> so many hours in a day! <br> -Bob Dylan"
+    - "We all came out to Montreux <br> On the Lake Geneva shoreline <br> To make records with a mobile <br> We didn't have much time <br> Frank Zappa and the Mothers <br> Were at the best place around <br> But some stupid with a flare gun <br> Burned the place to the ground! <br> -Deep Purple"
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Bibendum arcu vitae elementum curabitur vitae nunc sed. Tortor at risus viverra adipiscing at in. Lorem markdownum aequalis strigis. _Saetigeri iubeas_, vultu huic alvum nondum de obside ut laniavit arbor palmis, cum quin. Rupes vetat videndo, armigerae
@@ -33,3 +47,8 @@ Superi monilia omnes Cyprio Scylla cibos punica quae succincta pallent de incuba
 
 Quantum auxilium datus; sed pineta et, iuvenes redito; credas mensae, meum. Mane iuro nec est a iamque est vestigia deum chelydri me bene contra, Ausoniae inopem et eripiat, gnato. Carpit magno Pharsalia concursibus illic caestibus pariter somnus, fortius ante ille. Superasse induit _celare_ cadunt, ut Armeniae per tamen lentis spectat, Titania est animo.
 
+
+{% capture section2 %}
+<!-- If you want to add any text beneath the cta box and above FAQ heading, add here. -->
+{% endcapture %}
+{% include cta-faq.html %}

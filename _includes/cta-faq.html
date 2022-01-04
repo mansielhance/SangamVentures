@@ -1,0 +1,37 @@
+<!-- the content -->
+{{ section1 }}
+
+{% if page.show-cta %}
+<!-- Call to Action Section -->
+<div class="container">
+  <div class="row cta-box">
+    <h2 id="heading">{{ page.cta-heading }} </h2>
+    <span>
+      <p>{{ page.cta-description }}</p>
+    </span>
+    <button type="button" class="btn button btn-primary btn-lg">
+      <a href="{{ page.cta-button-url | relative_url }}" class = "button-text">{{ page.cta-button-text }}</a></button>
+  </div>
+</div>
+{% endif %}
+
+<!-- faq section -->
+{{ section2 }}
+
+{% if page.show-faq %}
+<h2>FAQ</h2>
+<div class="container accord">
+  {% assign i = -1 %}
+  {% for ques in page.questions %}
+  {% assign i = i | plus:1 %}
+  <button class="accordion question"><i class="fas fa-chevron-circle-right"></i> {{ page.questions[i] }}</button>
+  <div class="accordion-content">
+    <p class="answer"> {{ page.answers[i] }}</p>
+  </div>
+  {% endfor %}
+</div>
+
+<script type="text/javascript" src="{{ '/assets/js/accordion.js' | relative_url }}"></script>
+{% endif %}
+
+<!-- This page is to capture content in internal resource pages -->

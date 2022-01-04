@@ -36,7 +36,7 @@ All images/icons used are in either `.jpg` or  `.svg` format as per use case.
 
 - Cover images for Articles in Resource page;
     - minimum size 2000x500px `less than 1mb; .jpg`
-    - please put a black overlay of around 30% before exporting the image to the `cover` folder so that the quote is visible when successfully uploaded.
+    - to ensure maximum readability of the quote please put a black overlay of around 30% before uploading the image to the `cover` folder.
 
 - Authors' images for quotes in articles;
     - minimum size 68x68px `.svg`
@@ -114,7 +114,7 @@ Update `baseurl` and `permalink` in `_config.yml`
 - [x] Section for quotes with the person's photo and link to their profile
 - [x] Title and Description
 - [ ] CTAs to lead to other pages
-- [ ] FAQ section
+- [x] FAQ section
 
 
 ### Jekyll's official documentation

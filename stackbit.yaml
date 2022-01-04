@@ -293,6 +293,12 @@ models:
       - type: boolean
         name: promoted
         label: Promoted
+      - type: boolean
+        name: show-faq
+        label: show-faq
+      - type: boolean
+        name: show-cta
+        label: show-cta
   contact:
     type: data
     label: Contact
