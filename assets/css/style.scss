@@ -182,6 +182,10 @@ h1{
 
 //Responsive (Mobile Viewport)
 @media screen and (max-width: 600px){
+
+  h1{
+    font-size: 35px;
+  }
   .footer{
     margin-top: 0px;
     padding-left: 8vh;
