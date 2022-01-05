@@ -43,11 +43,9 @@ bodyClass: "page-home"
   <div class="container">
     <div class="row justify-content-start">
       <div class="col-12 col-md-7 col-lg-7 order-1 order-md-1 contentBox">
-        <p class="topText">~ Why are we working?</p>
-        <h2 class="wwh-text-color"> To Create Inclusive and Climate Resilient Communities</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
-          molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum
-          numquam blanditiis!</p>
+        <p class="topText">~ {{ page.why-top-text }}</p>
+        <h2 class="wwh-text-color"> {{ page.why-heading-text }}</h2>
+        <p>{{ page.why-description-text }}</p>
         <a href="#how">
           <button type="button" class="btn btn-primary btn-lg button1">how?</button> </a>
         <a href="/resource/why">
@@ -73,11 +71,9 @@ bodyClass: "page-home"
   <div class="container">
     <div class="row justify-content-start">
       <div class="col-12 col-md-7 col-lg-6 order-1 order-md-2 howContentBox">
-        <p class="topText">~ We are doing it to by</p>
-        <h2 class="wwh-text-color"> Driving Innovation and Diversity in the Green Economy</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
-          molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum
-          numquam blanditiis!</p>
+        <p class="topText">~ {{ page.how-top-text }}</p>
+        <h2 class="wwh-text-color"> {{ page.how-heading-text }}</h2>
+        <p>{{ page.how-description-text }}</p>
         <a href="/resource/what">
           <span><button type="button" class="btn btn-primary btn-lg button2">learn more</button></span></a>
         <a href="#what">
@@ -103,12 +99,9 @@ bodyClass: "page-home"
   <div class="container">
     <div class="row justify-content-start">
       <div class="whatContentBox">
-        <p class="topText">~ What are we doing?</p>
-        <h2 class="whatH2 wwh-text-color"> Climate mitigation and adaptation</h2>
-        <p class="mobilePWhat">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
-          molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum
-          numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium
-          optio, eaque rerum!</p>
+        <p class="topText">~ {{ page.what-top-text }}</p>
+        <h2 class="whatH2 wwh-text-color">{{ page.what-heading-text }} </h2>
+        <p class="mobilePWhat">{{ page.what-description-text }}</p>
         <button type="button" class="btn btn-primary btn-lg button2" data-toggle="modal"
         data-target="#joinUsModal">Join Us</button>
         <a href="/resource/what">
