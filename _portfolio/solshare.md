@@ -2,7 +2,7 @@
 title: "Solshare"
 date: 2018-12-20T13:44:30+10:00
 draft: false
-image: "images/portfolio/solshare.SVG"
+image: "images/portfolio/solshare.svg"
 tagline: ""
 websiteurl: "https://me-solshare.com/"
 websitedomain: "me-solshare.com"

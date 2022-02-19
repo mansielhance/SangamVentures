@@ -2,7 +2,7 @@
 title: "Khethworks"
 date: 2018-12-20T13:44:30+10:00
 draft: false
-image: "images/portfolio/khethworks.SVG"
+image: "images/portfolio/khethworks.svg"
 tagline: ""
 websiteurl: "https://www.khethworks.com/"
 websitedomain: "khethworks.com"

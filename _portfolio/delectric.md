@@ -2,7 +2,7 @@
 title: "Delectric Systems"
 date: 2018-12-20T13:44:30+10:00
 draft: false
-image: "images/portfolio/delectric.SVG"
+image: "images/portfolio/delectric.svg"
 tagline: ""
 websiteurl: "https://delectrik.com/"
 websitedomain: "delectrik.com"
