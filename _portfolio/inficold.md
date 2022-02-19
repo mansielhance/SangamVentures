@@ -2,7 +2,7 @@
 title: "Inficold India Pvt. Ltd."
 date: 2018-11-19T10:47:58+10:00
 draft: false
-image: "images/portfolio/inficold.svg"
+image: "images/portfolio/inficold.SVG"
 tagline: "Solar Power Cold Storage"
 websiteurl: "https://www.inficold.com/"
 websitedomain: "inficold.com"

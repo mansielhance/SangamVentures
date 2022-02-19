@@ -2,7 +2,7 @@
 title: "Promethean Energy"
 date: 2018-12-20T13:44:23+10:00
 draft: false
-image: "images/portfolio/promethean.svg"
+image: "images/portfolio/promethean.SVG"
 tagline: ""
 websiteurl: "https://www.prometheanenergy.com/"
 websitedomain: "prometheanenergy.com"
