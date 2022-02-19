@@ -13,7 +13,7 @@ why_image_hide_on_mobile: true
 how-top-text: "We are doing it to by"
 how-heading-text: "Driving Innovation and Diversity in the Green Economy"
 how-description-text: "Drawing on the power of human ingenuity, industry and collaboration. The factors affecting the rise of global warming and resource constraints and how the rapidly changing climate..."
-how_image: "images/illustrations/how.svg"
+how_image: "images/illustrations/how_graphic.svg"
 how_image_hide_on_mobile: true
 what-top-text: "What are we doing?"
 what-heading-text: "Climate mitigation and adaptation"
