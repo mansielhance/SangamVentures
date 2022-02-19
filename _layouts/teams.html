@@ -15,7 +15,7 @@ bodyClass: "page-teams"
 
 <div class="container profiles-row">
     <div class="row">
-        {% assign teams = site.team | where: "promoted", empty | sort: "weight" %}
+        {% assign teams = site.team | sort: "weight" %}
         {% for team in teams %}
         <div class="col-lg-3 mb-4">
             <div class="container ">

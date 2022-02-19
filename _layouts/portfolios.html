@@ -24,7 +24,7 @@ bodyClass: "page-portfolios"
 
     <div class="container profiles-row ">
         <div class="row filter-gallery">
-            {% assign portfolios = site.portfolio | where: "promoted", empty | sort: "weight" %}
+            {% assign portfolios = site.portfolio | sort: "weight" %}
             {% for portfolio in portfolios %}
             <div class="col-lg-4 mb-4 filter-column" data-id="{{ portfolio.category }}">
                 {% if portfolio.image %}
