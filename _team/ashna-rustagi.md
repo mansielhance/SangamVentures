@@ -2,7 +2,7 @@
 title: "Ashna Rustagi"
 date: 2018-12-20T13:44:30+10:00
 draft: false
-image: "images/team/Ashna Rustagi.jpg"
+image: "images/team/Ashna-Rustagi.jpg"
 jobtitle: "Analyst"
 linkedinurl: "https://www.linkedin.com/in/ashnarustagi/"
 twitterurl: "https://twitter.com/RustagiAshna"
