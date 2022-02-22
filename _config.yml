@@ -8,7 +8,7 @@ logo:
   mobile_width: "32px"
   desktop: "images/logo/logo sangam.png"
   desktop_height: "45px"
-  desktop_width: "155px"
+  desktop_width: "165px"
 
 collections:
   services:
