@@ -24,11 +24,8 @@ Prior to Sangam, I worked with EY India in their Risk Advisory practice for 2.5 
 <hr/>
 ### Blogs and Links
 
-#### How startups, FPOs can help smallholder farmers(#linkurl)
-[https://yourstory.com/socialstory/2021/11/startups-fpos-help-smallholder-farmers/amp]
+[How startups, FPOs can help smallholder farmers](https://yourstory.com/socialstory/2021/11/startups-fpos-help-smallholder-farmers/amp)
 
-#### Why land restoration entrepreneurs should partner with government programmes(#linkurl)
-[https://yourstory.com/socialstory/2021/11/startups-fpos-help-smallholder-farmers/amp]
+[Why land restoration entrepreneurs should partner with government programmes](https://yourstory.com/socialstory/2021/11/startups-fpos-help-smallholder-farmers/amp)
 
-#### Investing in our rural institutions for rural prosperity and regenerative agriculture(#linkurl)
-[https://www.linkedin.com/pulse/investing-our-rural-institutions-prosperity-ashna-rustagi/?trackingId=8ut%2FCq%2BbSmKuK79k0UGeMw%3D%3D]
+[Investing in our rural institutions for rural prosperity and regenerative agriculture](https://www.linkedin.com/pulse/investing-our-rural-institutions-prosperity-ashna-rustagi/?trackingId=8ut%2FCq%2BbSmKuK79k0UGeMw%3D%3D)
