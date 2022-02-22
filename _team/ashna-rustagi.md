@@ -25,7 +25,7 @@ Prior to Sangam, I worked with EY India in their Risk Advisory practice for 2.5 
 ### Blogs and Links
 
 #### How startups, FPOs can help smallholder farmers
-[https://yourstory.com/socialstory/2021/11/startups-fpos-help-smallholder-farmers/amp](#linkurl)
+[https://yourstory.com/socialstory/2021/11/startups-fpos-help-smallholder-farmers/amp](#https://yourstory.com/socialstory/2021/11/startups-fpos-help-smallholder-farmers/amp)
 
 #### Why land restoration entrepreneurs should partner with government programmes
 [https://yourstory.com/socialstory/2021/11/startups-fpos-help-smallholder-farmers/amp](#linkurl)
