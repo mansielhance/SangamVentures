@@ -90,6 +90,7 @@ bodyClass: "page-home"
   </div>
 </div>
 
+
 <!--Section 5 - What Content -->
 
 <a id="what"></a>
@@ -98,7 +99,7 @@ bodyClass: "page-home"
 <div class="what">
   <div class="container">
     <div class="row justify-content-start">
-      <div class="whatContentBox">
+      <div class="col-12 col-md-7 col-lg-7 order-1 order-md-1 whatContentBox">
         <p class="topText">~ {{ page.what-top-text }}</p>
         <h2 class="whatH2 wwh-text-color">{{ page.what-heading-text }} </h2>
         <p class="mobilePWhat">{{ page.what-description-text }}</p>
@@ -107,23 +108,16 @@ bodyClass: "page-home"
         <a href="./resource/what">
           <span><button type="button" class="btn btn-primary btn-lg button1">learn more</button></span></a>
       </div>
+      {% if page.what_image %}
+      <div class="col-12 col-md-5 col-lg-5 order-2 order-md-2 position-relative">
+        <img alt="{{ page.title }}"
+          class="what-image{% if page.what_image_absolute %} what-image-absolute{% endif %}{% if page.what_image_hide_on_mobile %} what-image-hide-mobile{% endif %}"
+          src="{{ page.what_image | relURL }}" />
+      </div>
+      {% endif %}
     </div>
   </div>
 </div>
-
-<!--Section 6 - What Image -->
-<div class="container ">
-  <div class="row whatImg mobileImg">
-    {% if page.what_image %}
-    <div class="col-12 position-relative">
-      <img alt="{{ page.title }}"
-        class="what-image{% if page.what_image_absolute %} what-image-absolute{% endif %}{% if page.what_image_hide_on_mobile %} what-image-hide-mobile{% endif %}"
-        src="{{ page.what_image | relURL }}" />
-    </div>
-    {% endif %}
-  </div>
-</div>
-
 
 <!-- Pop-Up Modal for Join Us Button -->
 <div class="modal fade" id="joinUsModal" tabindex="-1" role="dialog" aria-labelledby="joinUsModalLabel"
