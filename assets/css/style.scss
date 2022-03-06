@@ -133,9 +133,10 @@ body {
 
 //for all H1 headings except home page
 h1{
-  background: -webkit-linear-gradient(94deg, rgba(0, 73, 112, 1) 0%, rgba(0, 171, 189, 1) 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  // background: -webkit-linear-gradient(94deg, rgba(0, 73, 112, 1) 0%, rgba(0, 171, 189, 1) 100%);
+  // -webkit-background-clip: text;
+  // -webkit-text-fill-color: transparent;
+  color: #004970;
   font-size: 45px !important;
  }
 

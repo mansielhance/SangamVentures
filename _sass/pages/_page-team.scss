@@ -9,10 +9,9 @@
     .jobtitle {
         color: $primary;
         margin: -10px 0 10px 0; //top right bottom left;
-        text-transform: lowercase;
         font-weight: 500;
-        font-size: 18px;
-        font-style: italic;
+        font-size: 20px;
+        text-decoration: underline;
     }
     .content {
         padding-right: 50px;
