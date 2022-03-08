@@ -7,4 +7,4 @@ permalink: "/team/"
 
 # The Team
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+We strive to serve our portfolio.

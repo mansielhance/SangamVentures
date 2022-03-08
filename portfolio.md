@@ -7,4 +7,4 @@ permalink: "/portfolio/"
 
 # Our Portfolio
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+Our portfolio of start-ups tackling climate change

@@ -3,6 +3,7 @@ layout: default
 bodyClass: "page-resource"
 ---
 <!-- Cover image with the quote -->
+{% if page.show-cover-image %}
 <div class="container">
   <div class="row coverImage ">
     {% if page.cover-image %}
@@ -28,6 +29,7 @@ bodyClass: "page-resource"
     {% endif %}
   </div>
 </div>
+{% endif %}
 
 <!-- Content -->
 <div class="container pb-6 pt-6 pt-md-10 pb-md-10">

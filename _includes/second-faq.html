@@ -1,0 +1,16 @@
+<!-- faq section -->
+{% if page.show-second-faq %}
+<h2>{{ page.faq-heading-2 }}</h2>
+<div class="container accord">
+  {% assign i = -1 %}
+  {% for ques in page.questions-block2 %}
+  {% assign i = i | plus:1 %}
+  <button class="accordion question"><i class="fas fa-chevron-circle-right"></i> {{ page.questions-block2[i] }}</button>
+  <div class="accordion-content">
+    <p class="answer"> {{ page.answers-block2[i] }}</p>
+  </div>
+  {% endfor %}
+</div>
+
+<script type="text/javascript" src="{{ '/assets/js/accordion.js' | relative_url }}"></script>
+{% endif %}

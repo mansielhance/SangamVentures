@@ -2,6 +2,7 @@
 title: "Climate Mitigation and Adaptation"
 date: 2018-11-19T10:47:58+10:00
 draft: false
+show-cover-image: true
 image: "images/resource/icon.svg"
 cover-image: "images/cover/green-field.jpg"
 headline: "Article Category - What?"
@@ -47,7 +48,5 @@ Superi monilia omnes Cyprio Scylla cibos punica quae succincta pallent de incuba
 
 Quantum auxilium datus; sed pineta et, iuvenes redito; credas mensae, meum. Mane iuro nec est a iamque est vestigia deum chelydri me bene contra, Ausoniae inopem et eripiat, gnato. Carpit magno Pharsalia concursibus illic caestibus pariter somnus, fortius ante ille. Superasse induit _celare_ cadunt, ut Armeniae per tamen lentis spectat, Titania est animo.
 
-{% capture section2 %}
-<!-- If you want to add any text beneath the cta box and above FAQ heading, add here. -->
-{% endcapture %}
-{% include cta-faq.html %}
+{% include cta.html %}
+{% include faq.html %}
