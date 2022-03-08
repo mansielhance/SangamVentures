@@ -2,13 +2,16 @@
 ---
 
 // Colors
-$primary: #004970;
-$primary-dark: #00abbd;
-$secondary: #8ed8f8;
-$black: #2f2f41;
+$primary: #282828;
+$text: #454545;
+$accent: #004970;
 $white: #ffffff;
 $white-offset: #f1f1f173;
 $steel: #5c5a5a;
+// $primary-dark: #00abbd;
+// $secondary: #8ed8f8;
+// $black: #2f2f41;
+
 
 // Links
 $link-color: $primary;
@@ -83,7 +86,7 @@ $sub-footer-text-color: $white;
 }
 
 #main-menu li:active {
-  color: #004970;
+  color: $primary;
   font-weight: 500;
 }
 
@@ -92,6 +95,8 @@ $sub-footer-text-color: $white;
   padding-top: 60px;
   margin-top: -20px;
   padding-bottom: 20px;
+  background: $white-offset;
+
 }
 
 .footerRow{
