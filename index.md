@@ -13,12 +13,12 @@ why_image_hide_on_mobile: true
 how-top-text: "How?"
 how-heading-text: "Driving Innovation and Diversity in the Green Economy"
 how-description-text: "Drawing on the power of human ingenuity, industry and collaboration. The factors affecting the rise of global warming and resource constraints and how the rapidly changing climate..."
-how_image: "images/illustrations/innovate.svg"
+how_image: "images/illustrations/Innovate.svg"
 how_image_hide_on_mobile: true
 what-top-text: "What?"
 what-heading-text: "Climate mitigation and adaptation"
 what-description-text: "Climate Change is real, and to ensure a sustainable future we need to tackle it. To keep the planet under 1.5°C, we as a civilization need to change our ways and move from an extractive and linear to a circular and regenerative...."
-what_image: "images/illustrations/farmer-illustration.svg"
+what_image: "images/illustrations/farmer.svg"
 what_image_hide_on_mobile: true
 show_call_box: false
 ---
