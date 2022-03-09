@@ -63,7 +63,7 @@ Please note while placing images in `.md` files, make sure to put `{{site.baseur
 
 For example:
 
-![Inficold]({{site.baseurl}}images/company/Img1.JPG)
+![Inficold]({{site.baseurl}}/images/company/Img1.JPG)
 
 ```
 

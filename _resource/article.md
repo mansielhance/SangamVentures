@@ -90,7 +90,7 @@ Quantum auxilium datus; sed pineta et, iuvenes redito; credas mensae, meum. Mane
       </div>
     </div>
     <div class="col-md-9">
-      <img alt="sangam" class="" src="{{site.baseurl}}images/resource/img1.jpg" />
+      <img alt="sangam" class="" src="{{site.baseurl}}/images/resource/img1.jpg" />
 </div>
 
 {% include second-faq.html %}
@@ -107,7 +107,7 @@ Quantum auxilium datus; sed pineta et, iuvenes redito; credas mensae, meum. Mane
       </div>
     </div>
     <div class="col-md-6">
-      <img alt="green field" class="" src="{{site.baseurl}}images/resource/img1.jpg" />
+      <img alt="green field" class="" src="{{site.baseurl}}/images/resource/img1.jpg" />
       <p class= "caption"> Some information here about the image; caption/citation/reference </p>
     </div>
 
