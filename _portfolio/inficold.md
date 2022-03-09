@@ -23,7 +23,7 @@ Aut doloremque veniam rem asperiores excepturi qui ducimus nobis. Ad quam facere
 Superi monilia omnes Cyprio Scylla cibos punica quae succincta pallent de incubat hostes montibus, de moderato efficiet vulnere. Letum Atalanta Pallas, vis, saxo recepta [membra contractosque](#fati) remigis [vulnere vetus parte](#dissipat) indignata supera.
 
 
-![Inficold]({{site.baseurl}}/images/company/Img1.jpg "Inficold logo")
+![Inficold]({{site.baseurl}}images/company/Img1.JPG)
 
 <hr/><br>
 ### Blogs and Links

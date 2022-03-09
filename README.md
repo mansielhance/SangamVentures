@@ -1,17 +1,12 @@
 # Documentation
 
-### Fonts
+## Fonts
 - Lato for Headings
 - Avenir for Body Text
 - Playfair Display for Quotes inside the articles on resource page
 
-## Font sizes
-- H1 `45px`
-- H2 `26px`
-- H3 `22px`
-- H4 `20px`
-- Menu Items/Body Text/Overline Text `16px`
-- Button Text `14px`
+### Font sizes
+H1 `45px`; H2 `26px`; H3 `22px`; H4 `20px`; Menu Items/Body Text/Overline Text `16px`; Button Text `14px`
 
 ### Colors
 - primary: #282828
@@ -20,9 +15,7 @@
 
 ### Image Sizes 
 
-Icons `.svg` format
-Illustrations `.svg` format
-In file Image(s) `.jpg` or  `.png` format
+Icons `.svg` format; Illustrations `.svg` format; In file Image(s) `.jpg` or  `.png` format
 
 `wxh`
 
@@ -56,7 +49,6 @@ In file Image(s) `.jpg` or  `.png` format
     - Circular shape
     - White outer stroke with inner shadow (present - optional); can also be replaced with a white drop shadow
 
-
 ---
 
 
@@ -80,31 +72,64 @@ In file Image(s) `.jpg` or  `.png` format
     [w3schools](https://www.w3schools.com/css/default.asp)
     [tutorialspoint](https://www.tutorialspoint.com/css/index.htm)
 
+```
+Please note while placing images in `.md` files, make sure to put `{{site.baseurl}}` before the image source.
+
+For example:
+
+![Inficold]({{site.baseurl}}images/company/Img1.JPG)
+
+```
+
 
 ---
 
 
-### _resource
+## _resource
 
-## Widgets 
+### Widgets 
 - `{% include cta.html %}` For CTA
 - `{% include faq.html %}` For FAQ
 - `{% include second-faq.html %}` For second FAQ block
-- `{% include show-2-column.html %}` For 2 column layout
+<br>
+**For Reusable layouts, please find the code snippets in** `code-snippets.md`
 
-## Liquid Tags in Front Matter (Explanation)
+### Liquid Tags in Front Matter (Explanation)
 
 Boolean input(true/false)
-`promoted: ` or `show-page: ` To display the page or not entirely on `resources` page
-`show-faq: ` To display the faq widget or not
-`show-second-faq: ` To display the second-faq widget or not
-`show-cta: ` To display the cta widget or not
-`show-cover-image: ` To display the cover image or not
-`show-2-column-layout: ` To display the second column layout
+- `promoted: ` or `show-page: ` To display the page or not entirely on `resources` page
+- `show-faq: ` To display the faq widget or not
+- `show-second-faq: ` To display the second-faq widget or not
+- `show-cta: ` To display the cta widget or not
+- `show-cover-image: ` To display the cover image or not
 
-Content
-`image: ` For the main icon shown with the article on `resources` page
-`cover-image: ` For the main co
+CONTENT
+- `title: ` Main title of the page
+- `image: ` For the main icon shown with the article on `resources` page. Here you need to place the icon link from assets folder
+- `headline: ` This is the over line text displayed above your main title/heading on the Resources page
+- `category: ` What filter category you want to showcase this page in?
+
+CTA TAGS
+- `cta-heading: ` title of the cta
+- `cta-description: ` content within the cta box
+- `cta-button-text: ` what will the button say?
+- `cta-button-url: ` put the link where the user will be re-directed when they click on the button
+
+FAQ TAGS
+- `faq-heading-1: ` and `faq-heading-2: `  Add headings to the faq sections here
+- `questions: ` and `questions-block2: ` Write the questions to be displayed in FAQ 1 and FAQ 2
+- `answers: ` and `answers-block2: ` Write the answers to be displayed for questions in FAQ 1 and FAQ 2
+
+COVER IMAGE TAGS
+- `cover-image: ` Here you need to place the image link for the cover
+- `cover-quote: ` The quote you want to place on the cover-image
+- `quote-author: ` Name of the author who said the quote
+- `quote-author-designation: ` Designation of the author
+- `quote-author-image: ` Image of the author
+- `author-linkedinurl: ` Here you need to place the linkedIn url of the author
+
+---
+
 
 ### Testing on local server
 
