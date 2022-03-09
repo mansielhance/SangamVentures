@@ -15,7 +15,7 @@ H1 `45px`; H2 `26px`; H3 `22px`; H4 `20px`; Menu Items/Body Text/Overline Text `
 
 ### Image Sizes 
 
-Icons `.svg` format; Illustrations `.svg` format; In file Image(s) `.jpg` or  `.png` format
+Icons `.svg` format; Illustrations `.svg` format; In-file Image(s) `.jpg` or  `.png` format
 
 `wxh`
 
@@ -67,8 +67,6 @@ For example:
 
 ```
 
----
-
 
 ## Global 
 - To activate google analytics, update google_analytics_id in seo.yml
@@ -78,8 +76,6 @@ For example:
 - Social profiles can be updated in `data/social.json`
 - Menu can be updated in `data/menus.yml`
 
-
----
 
 ## Home
 

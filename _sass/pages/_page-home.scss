@@ -94,7 +94,7 @@
     .why img {
         width: 170%;
         margin-left: -5vw;
-        margin-top: -50px !important;
+        margin-top: -50px ;
     }
 
     .why h2 {
@@ -389,15 +389,34 @@
     }
 
     //mobile responsiveness 
-    @media screen and (max-width: 600px) {
+    @media screen and (max-width: 676px) {
         .contentBox{
-            padding: 0 20px 0 15px !important; //trbl
+            padding: 0 20px 0 20px !important; //trbl
             margin: -20px 0px 0 0px !important; //trbl
         }
 
         .quote{
             left: 0 !important;
             padding: 0 20px 0 20px !important; //trbl
+        }
+
+        .intro{
+            img{
+                width: 100%;
+                display: block;
+                margin: 0 auto;
+                margin-top: 30px;
+                margin-bottom: -20px;
+            }
+        }
+
+        .why{
+            img{
+                width: 100%;
+                display: block;
+                margin: 0 auto;
+                margin-top: 20px !important;
+            }
         }
 
         .how{
@@ -417,19 +436,101 @@
               }
 
               .howContentBox{
-                padding: 0 20px 0 15px !important;
+                padding: 0 20px 0 20px !important;
               }
+
+              img{
+                width: 110%;
+                margin-left: -14vw !important;
+                margin-top: 20px ;
+            }
           }
 
         .what{
             margin: 60px 0 0 0 !important;
             .whatContentBox{
-                padding: 0 20px 0 15px !important;
+                padding: 0 20px 0 20px !important;
               }
+            img{
+                width: 100%;
+                display: block;
+                margin: 0 auto;
+                margin-top: 20px !important;
+            }
         }
 
-        .intro-image, .why-image, .how-image{
-            display: none;
-          }
     }
 }
+
+    //tablet responsiveness 
+    @media screen and (min-width: 768px) and (max-width: 1180px) {
+
+        .intro{
+            margin-top: -70px;
+            margin-bottom: -100px !important;
+            h1{
+                font-size: 32px !important;
+            }
+
+            img{
+                width: 160% !important;
+                margin-bottom: 90px !important;
+                margin-left: 10px !important;
+            }
+        }
+
+        .parallax-row{
+            width: -48vw !important;
+            margin-bottom: -20px !important;
+            .quote{
+                 left: 25% !important;
+            }
+        }
+
+        .why{
+            
+            .contentBox{
+                padding-left: 110px !important;
+                margin-top: 0 !important;
+                padding-right: 0 !important;
+            }
+            img{
+                margin-top: 30px !important;
+                width: 160% !important;
+                margin-left: -2vw !important;
+            }
+        }
+
+        .how{
+            margin-top: -40px !important;
+            .howContentBox{
+                padding-left: 90px;
+            }
+            img{
+                width: 160% !important;
+                margin-top: 80px !important;
+            }
+        }
+
+        .what{
+            margin-top: 30px !important;
+            margin-bottom: 50px !important;
+            .whatContentBox{
+                margin-top: 0 !important;
+                padding-right: 50px !important;
+                padding-left: 20px;
+            }
+            img{
+               margin-left: -8vw !important;
+               margin-top: 120px !important ;
+            }
+        }
+
+    }
+
+
+
+
+
+    
+    
