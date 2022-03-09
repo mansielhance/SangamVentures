@@ -67,4 +67,23 @@
       }
     }
   }
+
+  //mobile responsiveness
+  @media screen and (max-width: 600px) {
+
+    .row{
+      padding-left: 15px !important;
+      flex-direction: inherit !important;
+
+
+      .footer-links{
+        display: block !important;
+      }
+
+      .footer-column{
+        margin-bottom: 20px !important;
+      }
+    }
+
+  }
 }

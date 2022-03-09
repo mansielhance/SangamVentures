@@ -70,6 +70,7 @@
   @media screen and (max-width: 600px) {
     .intro {
       margin-top: 50px !important;
+      margin-bottom: -30px !important;
 
       p {
         padding-bottom: 0 !important;
@@ -100,4 +101,26 @@
       }
     }
   }
+
+  //tablet responsiveness 
+   @media screen and (min-width: 768px) and (max-width: 1180px) {
+    .inner-heading-intro{
+      padding-left: 30px !important;
+    }
+    .profiles-row{
+      margin-left: 0 !important;
+      margin-bottom: 40px;
+      img{
+        width: 100% !important;
+        height: 100% !important;
+        margin: 0 auto;
+        display: block;
+      }
+
+    }
+
+  }
+
+
+  
 }
