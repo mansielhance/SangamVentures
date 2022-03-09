@@ -52,21 +52,7 @@ Icons `.svg` format; Illustrations `.svg` format; In file Image(s) `.jpg` or  `.
 ---
 
 
-### Additional Information
-
-- To activate google analytics, update google_analytics_id in `seo.yml`
-
-- Additonal team members can be added in `_team`
-
-- Additonal company portfolio can be added in `_portfolio`
-
-- New articles can be added in `_resource`
-
-- Cover Images for the articles in reources page can be found in `images/cover`
-
-- Author Images for the quotes in reource articles can be found in `images/author`
-
-### External Resources
+### Markdown and CSS Guides
 - [.md Syntax Guide](https://www.markdownguide.org/basic-syntax/)
 - CSS Syntax Guides
     [w3schools](https://www.w3schools.com/css/default.asp)
@@ -81,23 +67,128 @@ For example:
 
 ```
 
+---
+
+
+## Global 
+- To activate google analytics, update google_analytics_id in seo.yml
+- To publish, update `baseurl` and `permalink` in `_config.yml`
+- Global stylesheet can be found in `assets/css/style.css`
+- Logo can be updated in `_congig.yml`
+- Social profiles can be updated in `data/social.json`
+- Menu can be updated in `data/menus.yml`
+
+
+---
+
+## Home
+
+This is the main page of the website.
+
+- Associated Page `index.md`
+- The base layout for this page can be found in `_layouts/home.html`
+- The CSS styling sheet for this page can be found in `_sass/pages/page-home.scss`
+- Illustrations used on home page can be found in `images/illustrations`
 
 ---
 
 
+## Team
+
+This is the main page which displays all the team members present in `team` folder.
+
+- Associated Page `team.md`
+- The base layout for this page can be found in `_layouts/teams.html`
+- The CSS styling sheet for this page can be found in `_sass/pages/page-teams.scss`
+- Team members' photographs can be found in `images/team`
+
+## _team
+
+This folder contains all the markdown files for the team members being displayed on `Team` page.
+
+- The base layout for each team member can be found in `_layouts/team.html`
+- The CSS styling sheet for this folder can be found in `_sass/pages/page-team.scss`
+- Additonal team member can be added in this `_team` folder
+
+### Liquid Tags in Front Matter (Explanation)
+
+- `title: ` Here you'll enter the name of the team member
+- `image: ` Add photograph of the member here
+- `jobtitle: ` Add their job title here
+- `linkedinurl: ` Add linkedIn url here
+- `twitterurl: ` Add twitter url here
+- `twitterUsername: ` Add twitter username with @ here
+- `category: ` What filter category you want to showcase this page within?
+
+
+---
+
+
+## Portfolio
+
+This is the main page which displays all the companies present in `portfolio` folder.
+
+- Associated Page `portfolio.md`
+- The base layout for this page can be found in `_layouts/portfolios.html`
+- The CSS styling sheet for this page can be found in `_sass/pages/page-portfolios.scss`
+- You can edit the categories used in filters in  `_layouts/portfolios.html`
+- Company logos can be found in `images/portfolio`
+- You can add images to use within these portfolio pages in `images/company`
+
+## _portfolio
+
+This folder contains all the markdown files for the companies being displayed on `Portfolios` page.
+
+- The base layout for each portfolio page can be found in `_layouts/portfolio.html`
+- The CSS styling sheet for this folder can be found in `_sass/pages/page-portfolio.scss`
+- Additonal company portfolio can be added in this `_portfolio` folder
+
+### Liquid Tags in Front Matter (Explanation)
+
+- `title: ` Main title of the page. Here you'll enter the name of the company
+- `image: ` Add company's logo image here
+- `tagline: ` Companys' slogan etc.
+- `websiteurl: ` Companys' main websites' url
+- `category: ` What filter category you want to showcase this page within?
+
+
+---
+
+
+## Resources
+
+This is the main page which displays all the articles present in `_resource` folder.
+
+- Associated Page `resource.md`
+- The base layout for this page can be found in `_layouts/resources.html`
+- Icons used with every article can be found in `images/resource`
+- The CSS styling sheet for this page can be found in `_sass/pages/page-resources.scss`
+- You can edit the categories used in filters in  `_layouts/resources.html`
+
 ## _resource
+
+This folder contains all the markdown files for the articles/pages being displayed on `Resources` page.
+
+- The base layout for each resource page can be found in `_layouts/resource.html`
+- New article pages can be added in this folder `_resource`
+- The CSS styling sheet for this folder can be found in `_sass/pages/page-resource.scss`
+- Cover Images for the articles in reources page can be found in `images/cover`
+- Author Images for the quotes in reource articles can be found in `images/author`
 
 ### Widgets 
 - `{% include cta.html %}` For CTA
 - `{% include faq.html %}` For FAQ
 - `{% include second-faq.html %}` For second FAQ block
 <br>
-**For Reusable layouts, please find the code snippets in** `code-snippets.md`
+
+```
+For Reusable layouts, please find the code snippets in `code-snippets.md`
+```
 
 ### Liquid Tags in Front Matter (Explanation)
 
 Boolean input(true/false)
-- `promoted: ` or `show-page: ` To display the page or not entirely on `resources` page
+- `promoted: ` or `show-page: ` To display the page or not on `Resources` page
 - `show-faq: ` To display the faq widget or not
 - `show-second-faq: ` To display the second-faq widget or not
 - `show-cta: ` To display the cta widget or not
@@ -107,7 +198,7 @@ CONTENT
 - `title: ` Main title of the page
 - `image: ` For the main icon shown with the article on `resources` page. Here you need to place the icon link from assets folder
 - `headline: ` This is the over line text displayed above your main title/heading on the Resources page
-- `category: ` What filter category you want to showcase this page in?
+- `category: ` What filter category you want to showcase this page within?
 
 CTA TAGS
 - `cta-heading: ` title of the cta
@@ -128,6 +219,7 @@ COVER IMAGE TAGS
 - `quote-author-image: ` Image of the author
 - `author-linkedinurl: ` Here you need to place the linkedIn url of the author
 
+
 ---
 
 
@@ -145,9 +237,8 @@ To stop the server
 ctrl+c
 ``` 
 
-### To publish
 
-Update `baseurl` and `permalink` in `_config.yml` 
+---
 
 
 ### Jekyll's official documentation

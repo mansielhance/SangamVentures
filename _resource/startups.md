@@ -13,8 +13,6 @@ quote-author-designation: "Founder Sangam Ventures"
 quote-author-image: "images/author/kc-circle.svg"
 author-linkedinurl: "https://www.linkedin.com/in/karthikchandrasekar/"
 category: "funding"
-external-article-url: ""
-external-article-name: ""
 show-faq: true
 show-cta: true
 promoted: true
@@ -23,7 +21,6 @@ cta-heading: "Are you a startup?"
 cta-description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Bibendum arcu vitae elementum curabitur vitae nunc sed. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna."
 cta-button-text: "Join Us Today"
 cta-button-url: "/resource/startups"
-cta-image: "images/cta/cta-how.jpg"
 questions:
     - "Imagine"
     - "Vienna"
