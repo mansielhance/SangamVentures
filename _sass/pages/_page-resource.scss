@@ -8,6 +8,9 @@
     .overlineText{
       text-transform: uppercase;
     }
+    .content{
+      line-height: 25px;
+    }
     h2{
       margin-top: -10px;
       font-weight: 600;
@@ -21,7 +24,8 @@
         font-weight: 600;
       }
       .content{
-        text-align: justifyt;
+        text-align: justify;
+
       }
     }
   }
@@ -214,6 +218,19 @@
   //mobile responsiveness
   @media screen and (max-width: 600px) {
 
+    .text-widget{
+      margin-bottom: 20px !important;
+      .col{
+        width: 100% !important;
+        margin-bottom: 20px !important;
+        flex-basis: auto;
+      }
+    }
+    .caption{
+      display: block;
+    }
+
+
     .coverImage{
 
       min-height: 300px !important;
@@ -239,6 +256,25 @@
       margin-bottom: 60px;
       height: auto;
       padding-bottom: 40px;
+    }
+
+  }
+
+  //tablet responsiveness 
+  @media screen and (min-width: 768px) and (max-width: 1180px) {
+
+    .cta-box{
+      margin-bottom: 70px !important;
+    }
+    
+    .caption{
+      display: block !important;
+    }
+    .text-widget{
+      .content{
+        text-align: left !important;
+      }
+
     }
 
   }

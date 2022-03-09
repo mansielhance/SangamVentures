@@ -86,4 +86,16 @@
     }
 
   }
+
+  //tablet responsiveness 
+  @media screen and (min-width: 768px) and (max-width: 1180px) {
+    .row{
+      padding-left: 40px !important;
+      flex-direction: inherit !important;
+    }
+    .footer-links{
+      display: block !important;
+    }
+
+  }
 }

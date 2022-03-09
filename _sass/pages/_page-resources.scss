@@ -68,8 +68,21 @@
       .filter-column{
         margin-bottom: 15px !important;
       }
-      row.filter-gallery{
+      .filter-gallery{
         margin-bottom: 0;
+        .col-lg-4{
+          width: 100% !important;
+        }
       }
     }
+
+  //tablet responsiveness 
+  @media screen and (min-width: 768px) and (max-width: 1180px) {
+
+    .filter-gallery{
+      .col-lg-4{
+        width: 50% !important;
+      }
+    }
+  }
 }
