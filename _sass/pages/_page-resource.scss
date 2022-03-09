@@ -128,6 +128,7 @@
     margin-bottom: 40px;
   }
 
+  //For faq block 1
   button.accordion {
     width: 100%;
     background-color: $white;
@@ -158,6 +159,40 @@
     background: -webkit-linear-gradient(20deg, rgba(0, 73, 112, 1) 0%, rgba(0, 171, 189, 1) 100%);
     color: $white;
   }
+  //----
+  // For faq block 2
+  button.accordion2 {
+    width: 100%;
+    background-color: $white;
+    outline: none;
+    border-width: 0px 0px 1px 0px; //top right bottom left;
+    border-bottom-color: rgba(51, 51, 51, 0.116) !important;
+    text-align: left;
+    padding: 15px 20px;
+    font-size: 18px;
+    color: rgb(62, 63, 63);
+    cursor: pointer;
+    transition: background-color 0.2s linear;
+  }
+  button.accordion2:after {
+    font-size: 18px;
+    float: right;
+  }
+
+  button.accordion2.is-open:after {
+    .fas {
+      display: none;
+    }
+  }
+
+  button.accordion2:hover,
+  button.accordion2.is-open {
+    background-color: $primary;
+    background: -webkit-linear-gradient(20deg, rgba(0, 73, 112, 1) 0%, rgba(0, 171, 189, 1) 100%);
+    color: $white;
+  }
+  //---
+
 
   .accordion-content {
     background-color: white;

@@ -1,6 +1,6 @@
-const accordionBtns = document.querySelectorAll(".accordion");
+const accordionBtns2 = document.querySelectorAll(".accordion2");
 
-accordionBtns.forEach((accordion) => {
+accordionBtns2.forEach((accordion) => {
   accordion.onclick = function () {
     this.classList.toggle("is-open");
 
