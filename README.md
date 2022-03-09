@@ -182,7 +182,7 @@ This folder contains all the markdown files for the articles/pages being display
 <br>
 
 ```
-For Reusable layouts, please find the code snippets in `code-snippets.md`
+For Reusable layouts (2 column, 3 column, and 1:2 column ), please find the code snippets in `code-snippets.md`
 ```
 
 ### Liquid Tags in Front Matter (Explanation)
@@ -218,6 +218,14 @@ COVER IMAGE TAGS
 - `quote-author-designation: ` Designation of the author
 - `quote-author-image: ` Image of the author
 - `author-linkedinurl: ` Here you need to place the linkedIn url of the author
+
+
+---
+
+
+## Privacy Policy
+
+This page is linked in sub-footer. Associated page `privacy-policy.md`
 
 
 ---
