@@ -54,6 +54,13 @@
     }
   }
 
+  .teamImg{
+    img{
+      width: 250px;
+      height: 250px;
+    }
+  }
+
   //mobile responsiveness
   @media screen and (max-width: 600px) {
     .intro {
@@ -64,9 +71,33 @@
       }
     }
 
+    .teamImg img{
+      width: 100% !important;
+      height: 100% !important;
+    }
+
     .profiles-row {
       margin-top: -20px !important;
       margin-bottom: 0;
     }
   }
+
+
+  //tablet responsiveness 
+  @media screen and (min-width: 768px) and (max-width: 1180px) {
+
+    .profiles-row{
+      margin-bottom: 40px;
+      .col-lg-3{
+        width: 50% !important;
+      }
+
+      img{
+        width: 100% !important;
+        height: 100% !important;
+      }
+    }
+
+  }
+
 }
