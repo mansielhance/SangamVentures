@@ -2,6 +2,7 @@
 title: "Driving Innovation and Diversity"
 date: 2018-11-19T10:47:58+10:00
 draft: false
+show-page: true
 show-cover-image: true
 image: "images/resource/icon-3.svg"
 cover-image: "images/cover/green-field.jpg"

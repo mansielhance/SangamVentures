@@ -6,6 +6,10 @@
         }
     }
 
+    // .team-single{
+    //     padding-left: 50px;
+    // }
+
     .jobtitle {
         color: $accent;
         margin: -10px 0 10px 0; //top right bottom left;
@@ -14,9 +18,8 @@
         text-transform: uppercase;
     }
     .content {
-        padding-right: 50px;
         text-align: justify;
-
+        padding-right: 50px;
         hr{
             border-bottom: 0.5px solid rgba(51, 51, 51, 0.123);
         }

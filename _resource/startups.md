@@ -2,6 +2,7 @@
 title: "Let us help kickstart your startup"
 date: 2018-11-19T10:47:58+10:00
 draft: false
+show-page: true
 show-cover-image: false
 image: "images/resource/icon-4.svg"
 cover-image: "images/cover/green-field.jpg"

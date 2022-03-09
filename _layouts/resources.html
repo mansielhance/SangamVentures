@@ -18,6 +18,7 @@ bodyClass: "page-resources"
     <div class="row filter-gallery">
         {% assign promoted_resources = site.resource | where: "promoted", true | sort: "weight" %}
         {% for resource in promoted_resources %}
+        {% if resource.show-page %}
         <div class="col-lg-4 mb-4 filter-column" data-id="{{ resource.category }}">
             <div class="resource resource-summary resource-summary-large">
                 <div class="row">
@@ -39,6 +40,7 @@ bodyClass: "page-resources"
                 <!-- <div class="resource-content">{{ resource.content | truncate: 60 }}</div> -->
             </div>
         </div>
+        {% endif %}
         {% endfor %}
     </div>
 </div>

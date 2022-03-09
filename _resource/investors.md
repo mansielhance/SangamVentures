@@ -2,6 +2,7 @@
 title: "Become an investor for one of our ventures"
 date: 2018-11-19T10:47:58+10:00
 draft: false
+show-page: true
 show-faq: true
 show-cta: true
 show-cover-image: false

@@ -2,6 +2,7 @@
 title: "Inclusive and Climate Resilient Communities"
 date: 2018-11-19T10:47:58+10:00
 draft: false
+show-page: false
 show-cover-image: false
 image: "images/resource/icon-2.svg"
 cover-image: "images/cover/green-field.jpg"

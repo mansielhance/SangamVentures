@@ -2,12 +2,12 @@
   {
     "name": "Linkedin",
     "link": "https://www.linkedin.com/company/sangam-ventures/",
-    "image": "images/social/linkedin.svg"
+    "image": "images/social/linkedin-gray.svg"
   },
   {
     "name": "Twitter",
     "link": "https://twitter.com/sangamvc",
-    "image": "images/social/twitter.svg"
+    "image": "images/social/twitter-gray.svg"
   }
 ]
 
