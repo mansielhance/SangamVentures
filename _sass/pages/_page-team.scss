@@ -44,7 +44,33 @@
         }
     }
 
+    //mobile responsiveness 
     @media screen and (max-width: 600px) {
+        .row{
+            flex-direction: column-reverse;
+
+            img{
+                width: 95%;
+                height: 95%;
+                display: block;
+                margin: 0 auto;
+            }
+
+            .team-single{
+                margin-top: 40px;
+                .title{
+                    font-size: 32px !important;
+                    padding-left: 10px;
+                }
+                .jobtitle{
+                    padding-left: 10px;
+                }
+                .content{
+                    padding: 0 10px 0 10px;
+                }
+            }
+        }
+
         #main-menu-mobile{
             ul li{
                 display: block;
@@ -52,5 +78,34 @@
                 padding-bottom: 20px  !important;
             }
         }
+    }
+
+    //tablet responsiveness 
+    @media screen and (min-width: 768px) and (max-width: 1180px) {
+        .row{
+            flex-direction: column-reverse;
+
+            .col-md-8, .col-md-4{
+                max-width: 100% !important;
+            }
+
+            img{
+                width: 60% !important;
+                height: 60% !important;
+
+            }
+
+            .team-single{
+
+                margin-top: 40px;
+                .title{
+                    font-size: 32px !important;
+                }
+                .content{
+                    padding: 0 !important;
+                }
+            }
+        }
+
     }
 }
