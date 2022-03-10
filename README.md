@@ -75,6 +75,7 @@ For example:
 - Logo can be updated in `_congig.yml`
 - Social profiles can be updated in `data/social.json`
 - Menu can be updated in `data/menus.yml`
+- Styling sheets for components like footer, social icons, header etc. can be found under `_sass/components`
 
 
 ## Home
