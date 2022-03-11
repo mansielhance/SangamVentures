@@ -8,8 +8,8 @@
   <button class="accordion question"><i class="fas fa-chevron-circle-right"></i> {{ page.questions[i] }}</button>
   <div class="accordion-content">
     <p class="answer"> {{ page.answers[i] }}</p>
-    <br><img class="faq-image" src="{{ page.faqImages11[i] | prepend: site.baseurl}}" alt="sangam"/>
-    <img class="faq-image" src="{{ page.faqImages12[i] | prepend: site.baseurl}}" alt="sangam"/>
+    <br><img class="faq-image" src="{{ page.faqImages11[i] | prepend: site.baseurl}}" alt="sangam" onerror='this.style.display = "none"'/>
+    <img class="faq-image" src="{{ page.faqImages12[i] | prepend: site.baseurl}}" alt="sangam" onerror='this.style.display = "none"'/>
   </div>
   {% endfor %}
 </div>
