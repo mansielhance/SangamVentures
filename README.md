@@ -37,8 +37,8 @@ Icons `.svg` format; Illustrations `.svg` format; In-file Image(s) `.jpg` or  `.
 
 - Resource Page Icons;
     - minimum size 68x68px `.svg`
-    - Circular shape
-    - Drop shadow: Blur 10; Y 5; #263238 Opacity 5%
+    - Circular shape; Background color: white; Drop shadow: Blur 10; Y 5; #263238 Opacity 5%
+    - Icon color; Linear gradient: Color1 rgb(69,69,69) Opacity 100% | Color2 rgb(0,73,112) Opacity 100%
 
 - Cover images for Articles in Resource page;
     - minimum size 2000x500px `less than 1mb; .jpg/.png`
