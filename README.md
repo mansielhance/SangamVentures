@@ -207,6 +207,8 @@ FAQ TAGS
 - `faq-heading-1: ` and `faq-heading-2: `  Add headings to the faq sections here
 - `questions: ` and `questions-block2: ` Write the questions to be displayed in FAQ 1 and FAQ 2
 - `answers: ` and `answers-block2: ` Write the answers to be displayed for questions in FAQ 1 and FAQ 2
+- `faqImages11: ` and `faqImages12: ` To add images in the answer blocks of first FAQ 
+- `faqImages21: ` and `faqImages22: ` To add images in the answer blocks of second FAQ 
 
 COVER IMAGE TAGS
 - `cover-image: ` Here you need to place the image link for the cover
